@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.muke.ssh.domain.Product" table="product">
+		<id name="pid" column="pid">
+			<generator class="native"></generator>
+		</id>
+		<property name="pname" column="pname" length="20"></property>
+		<property name="price" column="price"></property>
+	</class>
+</hibernate-mapping>
