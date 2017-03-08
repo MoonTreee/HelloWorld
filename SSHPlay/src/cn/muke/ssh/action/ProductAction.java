@@ -28,6 +28,12 @@ public class ProductAction extends ActionSupport implements ModelDriven<Product>
         productService.save(product);
     }
 
+    //删除商品的方法
+    public void delete(){
+        System.out.println("Action中的delete方法执行了...");
+        productService.delete(product);
+    }
+
 
 
 

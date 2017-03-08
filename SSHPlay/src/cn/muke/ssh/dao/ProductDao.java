@@ -11,4 +11,8 @@ public class ProductDao extends HibernateDaoSupport {
         System.out.println("DAO中的save方法执行了....");
         this.getHibernateTemplate().save(product);
     }
+    public void delete(Product product) {
+        System.out.println("DAO中的delete方法执行了....");
+        this.getHibernateTemplate().delete(product);
+    }
 }

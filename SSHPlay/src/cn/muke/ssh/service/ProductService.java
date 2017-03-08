@@ -20,4 +20,8 @@ public class ProductService {
         System.out.println("Service中的save方法执行了...");
         productDao.save(product);
     }
+    public void delete(Product product) {
+        System.out.println("Service中的delete方法执行了...");
+        productDao.delete(product);
+    }
 }
