@@ -13,4 +13,4 @@ hello world！
 fork或者直接下载项目到本地，推荐用IDEA打开，修改一下jdbc.properties文件中的相应的属性即可（用户名以及密码）
 
 三：StrutsStudy
-Strus框架单独拿出来的联系。
+Strus框架单独拿出来的练习。
