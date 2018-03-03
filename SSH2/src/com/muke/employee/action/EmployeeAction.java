@@ -1,6 +1,7 @@
 package com.muke.employee.action;
 
 import com.muke.employee.domain.Employee;
+import com.muke.employee.domain.PageBean;
 import com.muke.employee.service.EmployeeService;
 import com.muke.employee.service.impl.EmployeeServiceImpl;
 import com.opensymphony.xwork2.ActionContext;
@@ -13,6 +14,11 @@ import com.opensymphony.xwork2.ModelDriven;
  */
 public class EmployeeAction extends ActionSupport implements ModelDriven<Employee>{
     private Employee employee = new Employee();
+    //接收当前的页数，默认值为1
+    private Integer currPage = 1;
+    public void setCurrPage(Integer currPage) {
+        this.currPage = currPage;
+    }
     @Override
     public Employee getModel() {
         return employee;
@@ -22,8 +28,19 @@ public class EmployeeAction extends ActionSupport implements ModelDriven<Employe
         this.employeeService = employeeService;
     }
 
+
     //注入业务层类
     private EmployeeService employeeService;
+
+    //提供一个查询的方法
+    public String findAll(){
+        PageBean<Employee> pageBean=employeeService.findByPage(currPage);
+        //将pageBean存入到值栈中
+        ActionContext.getContext().getValueStack().push(pageBean);
+        System.out.println("List详细信息：");
+        System.out.println(pageBean.getList());
+        return  "findAll";
+    }
 
     //用户登陆
     public String login(){

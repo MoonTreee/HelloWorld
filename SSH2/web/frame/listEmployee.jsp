@@ -52,7 +52,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <td align="center"><s:property value="#e.ename" /></td>
 <td align="center"><s:property value="#e.sex" /></td>
 <td align="center"><s:date name="#e.birthday" format="yyyy-MM-dd" /></td>
-<td align="center"><s:date name="#e.joinDay" format="yyyy-MM-dd" /></td>
+<td align="center"><s:date name="#e.joinDate" format="yyyy-MM-dd" /></td>
 <td align="center"><s:property value="#e.department.dname" /></td>
 <td align="center"><a href="employee_edit.action?eid=<s:property value="#e.eid" />"><img src="<%=basePath %>images/edit.png"/></a></td>
 <td align="center"><a href="employee_delete.action?eid=<s:property value="#e.eid" />"><img src="<%=basePath %>images/trash.gif"/></a></td>

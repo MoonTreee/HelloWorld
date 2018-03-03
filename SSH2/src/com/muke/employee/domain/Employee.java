@@ -11,7 +11,7 @@ public class Employee {
     private String ename;
     private String sex;
     private Date birthday;
-    private Date jionDate;
+    private Date joinDate;
     private String eno;
     private String username;
     private String password;
@@ -35,8 +35,8 @@ public class Employee {
         this.birthday = birthday;
     }
 
-    public void setJionDate(Date jionDate) {
-        this.jionDate = jionDate;
+    public void setJoinDate(Date jionDate) {
+        this.joinDate = jionDate;
     }
 
     public void setEno(String eno) {
@@ -71,8 +71,8 @@ public class Employee {
         return birthday;
     }
 
-    public Date getJionDate() {
-        return jionDate;
+    public Date getJoinDate() {
+        return joinDate;
     }
 
     public String getEno() {
