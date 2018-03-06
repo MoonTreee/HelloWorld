@@ -10,10 +10,10 @@
 		<property name="dname" column="dname" length="20"></property>
 		<property name="ddesc" column="ddesc" length="30"></property>
 
-		<!--关联规则的设定-->
-		<set name="employees">
-			<key column="dno"/>
-			<one-to-many class="com.muke.employee.domain.Employee"/>
-		</set>
+		<!--&lt;!&ndash;关联规则的设定&ndash;&gt;-->
+		<!--<set name="employees">-->
+			<!--<key column="dno"/>-->
+			<!--<one-to-many class="com.muke.employee.domain.Employee"/>-->
+		<!--</set>-->
 	</class>
 </hibernate-mapping>

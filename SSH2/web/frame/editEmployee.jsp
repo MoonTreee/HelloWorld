@@ -46,7 +46,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <tr>
 <td>所属部门：</td>
-<td><s:select name="department.did" list="list" value="%{model.department.did }" listKey="did" listValue="dname" headKey="" headValue="--请选择--" /></td>
+<td><s:select name="department.did" list="%{model.department.did }" listKey="did" listValue="dname" headKey="" headValue="--请选择--" /></td>
 <td>编号：</td>
 <td><input type="text" name="eno" value="${model.eno }" /></td>
 </tr>

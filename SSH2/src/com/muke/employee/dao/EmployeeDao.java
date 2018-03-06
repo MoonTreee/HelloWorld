@@ -20,6 +20,7 @@ public interface EmployeeDao{
     Employee findById(Integer eid);
 
     void update(Employee employee);
+    void delete(Employee employee);
 
     int findCount();
 }

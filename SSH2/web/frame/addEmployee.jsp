@@ -22,31 +22,33 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </table>
 <br/>
 
-<form id="saveForm" action="employee_save.action" method="post">
+<form id="saveForm" action="employee_save.action" method="post" >
 <table border='0' cellpadding="0"  cellspacing="10">
 <tr>
-<td>用户名：</td>
+<td>登陆账号：</td>
 <td><input type="text" name="username" /></td>
 <td>密码：</td>
 <td><input type="password" name="password" /></td>
 </tr>
+
 <tr>
 <td>姓名：</td>
 <td><input type="text" name="ename" /></td>
 <td>性别：</td>
-<td><s:radio name="sex" list="{'男','女'}" /></td>
+<td><s:radio name="sex" list="{'男','女'}"  theme="simple"></s:radio></td>
 </tr>
+
 <tr>
 <td>出生日期：</td>
 <td><input type="date" name="birthday" /></td>
 <td>入职时间：</td>
-<td><input type="date" name="joinDay" /></td>
+<td><input type="date" name="joinDate" /></td>
 </tr>
 
 <tr>
-<td>所属部门：</td>
-<td><s:select name="department.did" list="list" listKey="did" listValue="dname" headKey="" headValue="--请选择--" /></td>
-<td>编号：</td>
+<td>所属部门： </td>
+    <td><s:select name="department.did" list="list" listKey="did" listValue="dname" headKey="" headValue="--请选择--"  theme="simple"></s:select></td>
+<td>员工编号：</td>
 <td><input type="text" name="eno" /></td>
 </tr>
 </table>

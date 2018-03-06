@@ -49,6 +49,11 @@ public class EmployeeDaoImpl extends HibernateDaoSupport implements EmployeeDao 
     }
 
     @Override
+    public void delete(Employee employee) {
+        this.getHibernateTemplate().delete(employee);
+    }
+
+    @Override
     public int findCount() {
         String hql = "select count(*) from Employee";
         List<Long> list = this.getHibernateTemplate().find(hql);

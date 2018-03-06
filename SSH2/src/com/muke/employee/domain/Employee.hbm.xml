@@ -15,6 +15,6 @@
 		<property name="username" column="username" length="20"/>
 		<property name="password" column="password" length="20"/>
 
-        <many-to-one name="department" class="com.muke.employee.domain.Department" column="did" lazy="false"/>
+        <many-to-one name="department" class="com.muke.employee.domain.Department" column="did" lazy="false" cascade="all"/>
 	</class>
 </hibernate-mapping>

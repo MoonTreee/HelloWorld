@@ -1,8 +1,11 @@
 package com.muke.employee.action;
 
+import com.muke.employee.domain.Department;
 import com.muke.employee.domain.Employee;
 import com.muke.employee.domain.PageBean;
+import com.muke.employee.service.DepartmentService;
 import com.muke.employee.service.EmployeeService;
+import com.muke.employee.service.impl.DepartmentServiceImpl;
 import com.muke.employee.service.impl.EmployeeServiceImpl;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
@@ -23,6 +26,10 @@ public class EmployeeAction extends ActionSupport implements ModelDriven<Employe
     public Employee getModel() {
         return employee;
     }
+    private DepartmentService departmentService ;
+    public void setDepartmentService(DepartmentService departmentService) {
+        this.departmentService = departmentService;
+    }
 
     public void setEmployeeService(EmployeeService employeeService) {
         this.employeeService = employeeService;
@@ -37,9 +44,44 @@ public class EmployeeAction extends ActionSupport implements ModelDriven<Employe
         PageBean<Employee> pageBean=employeeService.findByPage(currPage);
         //将pageBean存入到值栈中
         ActionContext.getContext().getValueStack().push(pageBean);
-        System.out.println("List详细信息：");
-        System.out.println(pageBean.getList().get(0).getDepartment().getDname());
+        //System.out.println("List详细信息：");
+        //System.out.println(pageBean.getList().get(0).getDepartment().getDname());
         return  "findAll";
+    }
+
+    //跳转到"添加用户"节目的方法，需要将所有现有的部门名称传入
+    public String saveUI(){
+        PageBean<Department> pageBean = departmentService.findByPage(currPage);
+        //将pageBean存入到值栈中
+        ActionContext.getContext().getValueStack().push(pageBean);
+        return "saveUI";
+    }
+
+    //添加员工
+    public String save(){
+        employeeService.save(employee);
+        System.out.println(employee.getDepartment());
+        return "saveSuccess";
+    }
+
+    //删除员工
+    public String delete(){
+        employeeService.delete(employee);
+        return "deleteSuccess";
+    }
+
+    //更新员工信息
+
+
+    //更新部门信息的方法：先根据id返回待编辑部门的信息，再进行update
+    public String edit(){
+        //根据部门ID查询部门
+        employee = employeeService.findById(employee.getEid());
+        return "editSuccess";
+    }
+    public String update(){
+        employeeService.update(employee);
+        return "updateSuccess";
     }
 
     //用户登陆
