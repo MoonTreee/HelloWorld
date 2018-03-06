@@ -2,10 +2,10 @@
 
 <div align=center><img width="350" height="350" src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png"/></div>
 hello world！
-===================
+=============
 
 
-*****<font color=blue>再次感谢各位的star！</font>***** 
+*****再次感谢各位的star！***** 
 
 
 无硅步，不能致远。有什么问题欢迎留言交流！
