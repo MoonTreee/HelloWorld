@@ -1,7 +1,7 @@
 hello world！
 
 
-*****再次感谢各位的star！***** 
+*****<font color="bule">再次感谢各位的star！</font>***** 
 
 
 无硅步，不能致远。有什么问题欢迎留言交流！
@@ -36,14 +36,14 @@ Strus框架单独拿出来的练习。
 四：SSH2
 
 新加入了一个基于SS2H框架形成的员工管理信息系统。通过学习，可以较好的理解数据从前端到后台的流程。
-请你完成：将 部门表 和 员工信息表 联系起来，实现（诸如 某部门解散，该部门所有员工就被辞退）的过程
+请你完成：将 部门表 和 员工信息表 联系起来，实现（诸如 某部门解散，该部门所有员工就被辞退）的过程。
 
 
-注意：如果报错“Invocation of init method failed; nested exception is java.lang.NoSuchMethodError”</p>
+<font color="red">注意</font>：如果报错“Invocation of init method failed; nested exception is java.lang.NoSuchMethodError”</p>
 是因为在Spring AOP Libraries包中有个开头为asm的jar包，而Hibernate3.2 Core Libraries包里有个asm.jar，问题就在这里了，可能会遇到版本不同的时候控制台报出没有此方法的异常，道理和现在遇到的相同，问题的根源就在于此，这两个jar则其哪个呢？试着将asm的jar直接移除即可。</p>
 
 
-**--<font size=19>更新信息</font>--**
+**--<font size=26 color="bule">更新信息</font>--**
 
 _0303：增加员工管理模块
 
