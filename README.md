@@ -1,6 +1,6 @@
 
-![GitHub Mark](http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png "GitHub Mark")
 
+<div align=center><img width="350" height="350" src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png "/></div>
 hello world！
 ============
 
@@ -10,7 +10,7 @@ hello world！
 
 无硅步，不能致远。有什么问题欢迎留言交流！
 
-一：MVCStudy
+`一：MVCStudy`
 ----------
 
 这是一个基于MVC结构开发的小demo，无需引入任何jar包，纯手工开发，方便理解MVC工作模式。
@@ -18,7 +18,7 @@ hello world！
 主要功能：用户在页面上输入两个数字，程序进行计算并将结果返回给用户。
 
 
-二：SSHPlay
+`二：SSHPlay`
 --------
 这是一个SSH框架的整合练习，尚处在开发阶段
 
@@ -34,13 +34,13 @@ hello world！
 fork或者直接下载项目到本地，推荐用IDEA打开，修改一下jdbc.properties文件中的相应的属性即可（用户名以及密码）
 
 
-三：StrutsStudy
+`三：StrutsStudy`
 -----------
 
 Strus框架单独拿出来的练习。
 
 
-四：SSH2
+`四：SSH2`
 --------
 
 新加入了一个基于SS2H框架形成的员工管理信息系统。通过学习，可以较好的理解数据从前端到后台的流程。
