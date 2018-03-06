@@ -1,10 +1,8 @@
 
 
-<div align=center><img width="350" height="350" src=
-"http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png"/></div>
-<font color=blue>hello world！</font>
-
-============
+<div align=center><img width="350" height="350" src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png"/></div>
+hello world！
+===================
 
 
 *****<font color=blue>再次感谢各位的star！</font>***** 
