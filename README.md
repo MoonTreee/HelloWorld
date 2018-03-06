@@ -4,7 +4,7 @@ hello world！
 ============
 
 
-*****<font color=bule">再次感谢各位的star！</font>***** 
+*****<font color=blue>再次感谢各位的star！</font>***** 
 
 
 无硅步，不能致远。有什么问题欢迎留言交流！
@@ -50,7 +50,7 @@ Strus框架单独拿出来的练习。
 是因为在Spring AOP Libraries包中有个开头为asm的jar包，而Hibernate3.2 Core Libraries包里有个asm.jar，问题就在这里了，可能会遇到版本不同的时候控制台报出没有此方法的异常，道理和现在遇到的相同，问题的根源就在于此，这两个jar则其哪个呢？试着将asm的jar直接移除即可。</p>
 
 
-**--<font size=26 color=bule>更新信息</font>--**
+**--<font size=14 color=blue>更新信息</font>--**
 
 _0303：增加员工管理模块_
 
