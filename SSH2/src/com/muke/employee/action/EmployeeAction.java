@@ -38,7 +38,7 @@ public class EmployeeAction extends ActionSupport implements ModelDriven<Employe
         //将pageBean存入到值栈中
         ActionContext.getContext().getValueStack().push(pageBean);
         System.out.println("List详细信息：");
-        System.out.println(pageBean.getList());
+        System.out.println(pageBean.getList().get(0).getDepartment().getDname());
         return  "findAll";
     }
 

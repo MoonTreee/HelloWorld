@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/jsr181-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/jaxws-tools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/stax-ex.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/jaxws-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/streambuffer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/jaxb-xjc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/stax2-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/jaxws-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/mimepull.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/woodstox-core-asl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/saaj-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/jaxb-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/policy.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/jaxb-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/saaj-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/gmbal-api-only.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/management-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/ha-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/FastInoset.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MVCStudy/lib/mail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
