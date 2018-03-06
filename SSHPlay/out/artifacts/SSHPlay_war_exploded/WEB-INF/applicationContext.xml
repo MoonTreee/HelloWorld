@@ -42,18 +42,18 @@
         <!-- 加载hibernate中的映射文件 -->
         <property name="mappingResources">
             <list>
-                <value>cn/muke/ssh/domain/Product.hbm.xml</value>
+                <value>cn/njust/ssh/domain/Product.hbm.xml</value>
             </list>
         </property>
     </bean>
-    <bean id="productAction" class="cn.muke.ssh.action.ProductAction" scope="prototype">
+    <bean id="productAction" class="cn.njust.ssh.action.ProductAction" scope="prototype">
         <property name="productService" ref="productService"></property>
     </bean>
-    <bean id="productService" class="cn.muke.ssh.service.ProductService">
+    <bean id="productService" class="cn.njust.ssh.service.ProductService">
         <property name="productDao" ref="productDao"></property>
     </bean>
     <!--配置DAO-->
-    <bean id="productDao" class="cn.muke.ssh.dao.ProductDao">
+    <bean id="productDao" class="cn.njust.ssh.dao.ProductDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
     <!-- 配置事务管理 -->

@@ -3,7 +3,7 @@
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.muke.employee.domain.Department" table="department">
+	<class name="com.njust.employee.domain.Department" table="department">
 		<id name="did" column="did">
 			<generator class="native"/>
 		</id>
@@ -13,7 +13,7 @@
 		<!--关联规则的设定-->
 		<set name="employees">
 			<key column="dno"/>
-			<one-to-many class="com.muke.employee.domain.Employee"/>
+			<one-to-many class="com.njust.employee.domain.Employee"/>
 		</set>
 	</class>
 </hibernate-mapping>

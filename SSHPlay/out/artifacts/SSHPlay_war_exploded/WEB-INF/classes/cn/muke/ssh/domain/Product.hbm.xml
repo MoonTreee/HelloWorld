@@ -3,7 +3,7 @@
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="cn.muke.ssh.domain.Product" table="product">
+	<class name="cn.njust.ssh.domain.Product" table="product">
 		<id name="pid" column="pid">
 			<generator class="native"></generator>
 		</id>

@@ -6,6 +6,6 @@
 
 <struts>
     <package name="ssh" extends="struts-default" namespace="/">
-        <action name="product_*" class="cn.muke.ssh.action.ProductAction" method="{1}"></action>
+        <action name="product_*" class="cn.njust.ssh.action.ProductAction" method="{1}"></action>
     </package>
 </struts>

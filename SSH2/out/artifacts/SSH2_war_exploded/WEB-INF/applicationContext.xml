@@ -42,33 +42,33 @@
         <!-- 加载hibernate中的映射文件 -->
         <property name="mappingResources">
             <list>
-                <value>com/muke/employee/domain/Department.hbm.xml</value>
-                <value>com/muke/employee/domain/Employee.hbm.xml</value>
+                <value>com/njust/employee/domain/Department.hbm.xml</value>
+                <value>com/njust/employee/domain/Employee.hbm.xml</value>
             </list>
         </property>
 
     </bean>
     <!--配置Action的类:prototype多例的-->
-    <bean id="employeeAction" class="com.muke.employee.action.EmployeeAction" scope="prototype">
+    <bean id="employeeAction" class="com.njust.employee.action.EmployeeAction" scope="prototype">
         <property name="employeeService" ref="employeeService"></property>
     </bean>
-    <bean id="departmentAction" class="com.muke.employee.action.DepartmentAction" scope="prototype">
+    <bean id="departmentAction" class="com.njust.employee.action.DepartmentAction" scope="prototype">
         <property name="departmentService" ref="departmentService"/>
     </bean>
 
     <!--配置Service的类-->
-    <bean id ="employeeService" class="com.muke.employee.service.impl.EmployeeServiceImpl">
+    <bean id ="employeeService" class="com.njust.employee.service.impl.EmployeeServiceImpl">
         <property name="employeeDao" ref="employeeDao"></property>
     </bean>
-    <bean id="departmentService" class="com.muke.employee.service.impl.DepartmentServiceImpl">
+    <bean id="departmentService" class="com.njust.employee.service.impl.DepartmentServiceImpl">
         <property name="departmentDao" ref="departmentDao"/>
     </bean>
 
     <!--配置DAO-->
-    <bean id ="employeeDao" class="com.muke.employee.dao.impl.EmployeeDaoImpl">
+    <bean id ="employeeDao" class="com.njust.employee.dao.impl.EmployeeDaoImpl">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
-    <bean id="departmentDao" class="com.muke.employee.dao.impl.DepartmentDaoImpl">
+    <bean id="departmentDao" class="com.njust.employee.dao.impl.DepartmentDaoImpl">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 

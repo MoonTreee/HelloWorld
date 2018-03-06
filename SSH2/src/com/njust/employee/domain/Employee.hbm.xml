@@ -10,11 +10,11 @@
 		<property name="ename" column="ename" length="20"/>
 		<property name="sex" column="sex" length="10"/>
 		<property name="birthday" column="birthday" />
-		<property name="jionDate" column="jionDate"/>
+		<property name="joinDate" column="joinDate"/>
 		<property name="eno" column="eno" length="20"/>
 		<property name="username" column="username" length="20"/>
 		<property name="password" column="password" length="20"/>
 
-        <many-to-one name="department" class="com.njust.employee.domain.Department" column="dno"/>
+        <many-to-one name="department" class="com.njust.employee.domain.Department" column="did" lazy="false" cascade="all"/>
 	</class>
 </hibernate-mapping>
