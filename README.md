@@ -1,9 +1,5 @@
 
-```html
-<div align=center>
 ![GitHub Mark](http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png "GitHub Mark")
-</div>
-```
 
 hello world！
 ============
@@ -56,7 +52,7 @@ Strus框架单独拿出来的练习。
 
 
 ```html 
-**<font size=14 color=grey>更新信息</font>**
+更新信息
 ```
 
 _0303：增加员工管理模块_
