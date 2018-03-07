@@ -39,7 +39,7 @@ fork或者直接下载项目到本地，推荐用IDEA打开，修改一下jdbc.p
 `三：StrutsStudy`
 -----------
 
-Strus框架单独拿出来的练习。
+Struts框架单独拿出来的练习。
 
 
 `四：SSH2`
