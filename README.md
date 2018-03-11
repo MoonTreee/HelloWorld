@@ -39,7 +39,7 @@ fork或者直接下载项目到本地，推荐用IDEA打开，修改一下jdbc.p
 `三：StrutsStudy`
 -----------
 
-Strus框架单独拿出来的练习。
+Struts框架单独拿出来的练习。
 
 
 `四：SSH2`:clock1: :clock1:	:clock3:	
@@ -50,7 +50,7 @@ Strus框架单独拿出来的练习。
 
 
 <font color=#0099ff>注意</font>：如果报错“Invocation of init method failed; nested exception is java.lang.NoSuchMethodError”</p>
-是因为在Spring AOP Libraries包中有个开头为asm的jar包，而Hibernate3.2 Core Libraries包里有个asm.jar，问题就在这里了，可能会遇到版本不同的时候控制台报出没有此方法的异常，道理和现在遇到的相同，问题的根源就在于此，这两个jar则其哪个呢？试着将asm的jar直接移除即可。</p>
+是因为在Spring AOP Libraries包中有个开头为asm的jar包，而Hibernate3.2 Core Libraries包里有个asm.jar，问题就在这里了，可能会遇到版本不同的时候控制台报出没有此方法的异常。试着将asm的jar直接移除即可。</p>
 
 
 
