@@ -6,11 +6,13 @@ import com.njust.employee.service.DepartmentService;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by Tree on 2017/3/14.
  * 部门管理的Action类
  */
+@Component
 public class DepartmentAction extends ActionSupport implements ModelDriven<Department> {
     //模型驱动使用的对象
     private Department department = new Department();

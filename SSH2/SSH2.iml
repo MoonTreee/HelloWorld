@@ -30,6 +30,7 @@
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/web/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSH2_war_exploded/WEB-INF/applicationContext.xml</file>
         </fileset>
       </configuration>
     </facet>

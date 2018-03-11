@@ -16,7 +16,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <tr>
 <td align="right" > 
 <a href="javascript:document.getElementById('saveForm').submit()">保存</a> &nbsp;&nbsp;
-<a href="javascript:histoey.go(-1)">退回 </a>
+<a href="javascript:history.go(-1)">退回 </a>
 </td>
 </tr>
 </table>

@@ -24,6 +24,5 @@
             <result name="editSuccess">/frame/editDepartment.jsp</result>
             <result name="updateSuccess" type="redirectAction">department_findAll.action</result>
         </action>
-
     </package>
 </struts>

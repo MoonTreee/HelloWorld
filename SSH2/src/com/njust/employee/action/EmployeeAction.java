@@ -8,11 +8,14 @@ import com.njust.employee.service.EmployeeService;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by Tree on 2017/3/13.
  * 员工管理的Action类
  */
+
+@Component
 public class EmployeeAction extends ActionSupport implements ModelDriven<Employee>{
     private Employee employee = new Employee();
     //接收当前的页数，默认值为1

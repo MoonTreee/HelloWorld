@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MVCStudy/MVCStudy.iml" filepath="$PROJECT_DIR$/MVCStudy/MVCStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSH2/SSH2.iml" filepath="$PROJECT_DIR$/SSH2/SSH2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSHPlay/SSHPlay.iml" filepath="$PROJECT_DIR$/SSHPlay/SSHPlay.iml" />
+    </modules>
+  </component>
+</project>

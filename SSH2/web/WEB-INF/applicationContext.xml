@@ -43,8 +43,8 @@
                 <value>com/njust/employee/domain/Employee.hbm.xml</value>
             </list>
         </property>
-
     </bean>
+
     <!--配置Action的类:prototype多例的-->
     <bean id="employeeAction" class="com.njust.employee.action.EmployeeAction" scope="prototype">
         <property name="employeeService" ref="employeeService"></property>
@@ -53,7 +53,6 @@
     <bean id="departmentAction" class="com.njust.employee.action.DepartmentAction" scope="prototype">
         <property name="departmentService" ref="departmentService"/>
     </bean>
-
     <!--配置Service的类-->
     <bean id ="employeeService" class="com.njust.employee.service.impl.EmployeeServiceImpl">
         <property name="employeeDao" ref="employeeDao"></property>
@@ -61,7 +60,6 @@
     <bean id="departmentService" class="com.njust.employee.service.impl.DepartmentServiceImpl">
         <property name="departmentDao" ref="departmentDao"/>
     </bean>
-
     <!--配置DAO-->
     <bean id ="employeeDao" class="com.njust.employee.dao.impl.EmployeeDaoImpl">
         <property name="sessionFactory" ref="sessionFactory"/>
@@ -76,4 +74,15 @@
     </bean>
     <!-- 开启注解事务 -->
     <tx:annotation-driven transaction-manager="transaction"></tx:annotation-driven>
+
+
+    <!-- 基于配置文件的aop -->
+    <bean id ="accessToken" class="com.njust.employee.aspect.AccessTokenAspect"/>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <aop:config>
+        <aop:aspect ref="accessToken">
+            <aop:around method="around" pointcut="execution(* com.njust.employee.action.EmployeeAction.findAll())"></aop:around>
+            <aop:around method="around" pointcut="execution(* com.njust.employee.action.DepartmentAction.findAll())"></aop:around>
+        </aop:aspect>
+    </aop:config>
 </beans>

@@ -54,7 +54,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<li><span>|</span></li>
 				<li><a href="#">新浪微博</a></li>
 				<li><span>|</span></li>
-				<li><a href="#">腾讯微薄</a></li>
+				<li><a href="#">腾讯微博</a></li>
 			</ul>
 		</div>
 	</div>
