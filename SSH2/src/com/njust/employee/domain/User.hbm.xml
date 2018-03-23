@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.njust.employee.domain.User" table="user">
+        <id name="uid" column="uid">
+            <generator class="native"/>
+        </id>
+        <property name="username" column="username" length="20"/>
+        <property name="password" column="password" length="20"/>
+    </class>
+</hibernate-mapping>

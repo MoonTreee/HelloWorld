@@ -85,18 +85,4 @@ public class EmployeeAction extends ActionSupport implements ModelDriven<Employe
         return "updateSuccess";
     }
 
-    //用户登陆
-    public String login(){
-        //调用业务层的类
-        Employee existEmployee =employeeService.login(employee);
-        if(existEmployee==null){
-            //登陆失败
-            this.addActionError("用户名或密码错误！");
-            return INPUT;
-        }else {
-            //登陆成功
-            ActionContext.getContext().getSession().put("existEmployee",existEmployee);
-            return SUCCESS;
-        }
-    }
 }

@@ -18,12 +18,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         this.employeeDao = employeeDao;
     }
 
-    //业务层的登陆方法
-    @Override
-    public Employee login(Employee employee) {
-        Employee existEmplyee = employeeDao.findByUsernameAndPassword(employee);
-        return existEmplyee;
-    }
 
     @Override
     public PageBean<Employee> findByPage(Integer currPage) {

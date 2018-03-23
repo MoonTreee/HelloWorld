@@ -10,7 +10,6 @@ import java.util.List;
  */
 public interface EmployeeDao{
 
-    Employee findByUsernameAndPassword(Employee employee);
 
     List<Employee> findByPage(int begin, int pageSize);
 

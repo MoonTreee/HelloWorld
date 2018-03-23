@@ -24,5 +24,10 @@
             <result name="editSuccess">/frame/editDepartment.jsp</result>
             <result name="updateSuccess" type="redirectAction">department_findAll.action</result>
         </action>
+
+        <action name="user_*" class="userAction" method="{1}">
+            <result name="input">/index.jsp</result>
+            <result name="success" type="redirect">/frame.jsp</result>
+        </action>
     </package>
 </struts>
