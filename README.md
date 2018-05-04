@@ -4,6 +4,7 @@
 
 
 hello world！
+[进阶实战项目，点击这里!](https://github.com/MoonTreee/lucene-trey)
 =============
 
 
